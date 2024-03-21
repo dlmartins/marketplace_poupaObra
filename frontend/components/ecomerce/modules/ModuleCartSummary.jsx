@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { calculateAmount } from '~/utilities/ecomerce-helpers';
+import { calculateAmount } from '../../../utilities/ecomerce-helpers';
 
 const ModuleCartSummary = ({ source }) => {
     // View
@@ -26,13 +26,13 @@ const ModuleCartSummary = ({ source }) => {
             <div className="ps-block--shopping-total">
                 <div className="ps-block__header">
                     <p>
-                        Subtotal <span> ${amount}</span>
+                        Subtotal <span> R${amount}</span>
                     </p>
                 </div>
                 <div className="ps-block__content">
                     <ul className="ps-block__product">{productItemsView}</ul>
                     <h3>
-                        Total <span>${amount}</span>
+                        Total <span>R${amount}</span>
                     </h3>
                 </div>
             </div>

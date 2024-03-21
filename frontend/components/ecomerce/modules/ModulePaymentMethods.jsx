@@ -17,31 +17,31 @@ const ModulePaymentMethods = () => {
 
     return (
         <>
-            <h4>Payment Methods</h4>
+            <h4>Métodos de pagamento</h4>
             <div className="ps-block--payment-method">
                 <div className="ps-block__header">
                     <Radio.Group
                         onChange={(e) => handleChangeMethod(e)}
                         value={method}>
                         <Radio value={1}>Visa / Master Card</Radio>
-                        <Radio value={2}>Paypal</Radio>
+                        <Radio value={2}>PIX</Radio>
                     </Radio.Group>
                 </div>
                 <div className="ps-block__content">
                     {method === 1 ? (
                         <div className="ps-block__tab">
                             <div className="form-group">
-                                <label>Card Number</label>
+                                <label>Número do Cartão</label>
                                 <input type="text" className="form-control" />
                             </div>
                             <div className="form-group">
-                                <label>Card Holders</label>
+                                <label>Nome no Cartão</label>
                                 <input type="text" className="form-control" />
                             </div>
                             <div className="row">
                                 <div className="col-sm-4 col-4">
                                     <div className="form-group">
-                                        <label>Expiration Date (MM/YY)</label>
+                                        <label>Data de Expiração (MM/AA)</label>
                                         <input
                                             type="text"
                                             className="form-control"
@@ -63,7 +63,7 @@ const ModulePaymentMethods = () => {
                                 <button
                                     className="ps-btn ps-btn--fullwidth"
                                     onClick={(e) => handleSubmit(e)}>
-                                    Submit
+                                    Enviar
                                 </button>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const ModulePaymentMethods = () => {
                                 className="ps-btn"
                                 href="https://www.paypal.com/"
                                 target="_blank">
-                                Process with Paypal
+                                Processando PIX
                             </a>
                         </div>
                     )}
