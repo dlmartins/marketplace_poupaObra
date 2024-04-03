@@ -1,12 +1,12 @@
 import React from 'react';
-import CountDown from '~/components/elements/CountDown';
+import CountDown from '../../../../components/elements/CountDown';
 
 const ModuleDetailCountdown = () => {
     return (
         <div className="ps-product__countdown">
             <figure>
                 <figcaption>
-                    Don't Miss Out! This promotion will expires in
+                    Não perca o desconto! Promoção termina em
                 </figcaption>
                 <CountDown
                     timeTillDate="12 31 2020, 6:00 am"
@@ -14,7 +14,7 @@ const ModuleDetailCountdown = () => {
                 />
             </figure>
             <figure>
-                <figcaption>Sold Items</figcaption>
+                <figcaption>Itens Vendidos</figcaption>
                 <div
                     className="ps-product__progress-bar ps-progress"
                     data-value="13">
@@ -22,7 +22,7 @@ const ModuleDetailCountdown = () => {
                         <span></span>
                     </div>
                     <p>
-                        <b>20/85</b> Sold
+                        <b>20/85</b> Vendidos
                     </p>
                 </div>
             </figure>

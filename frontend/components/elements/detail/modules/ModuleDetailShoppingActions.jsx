@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { useRouter } from 'next/router';
 import { Modal } from 'antd';
-import useEcomerce from '~/hooks/useEcomerce';
+import useEcomerce from '../../../../hooks/useEcomerce';
 
 const ModuleDetailShoppingActions = ({
     ecomerce,
@@ -39,8 +39,8 @@ const ModuleDetailShoppingActions = ({
         addItem({ id: product.id }, ecomerce.compareItems, 'compare');
         const modal = Modal.success({
             centered: true,
-            title: 'Success!',
-            content: `This product has been added to compare listing!`,
+            title: 'Sucesso!',
+            content: `Item adicionado a lista de comparação!`,
         });
         modal.update;
     };
@@ -50,8 +50,8 @@ const ModuleDetailShoppingActions = ({
         addItem({ id: product.id }, ecomerce.wishlistItems, 'wishlist');
         const modal = Modal.success({
             centered: true,
-            title: 'Success!',
-            content: `This item has been added to your wishlist`,
+            title: 'Sucesso!',
+            content: `Item adicionado a lista de desejos!`,
         });
         modal.update;
     };
@@ -71,7 +71,7 @@ const ModuleDetailShoppingActions = ({
         return (
             <div className="ps-product__shopping">
                 <figure>
-                    <figcaption>Quantity</figcaption>
+                    <figcaption>Quantidade</figcaption>
                     <div className="form-group--number">
                         <button
                             className="up"
@@ -95,10 +95,10 @@ const ModuleDetailShoppingActions = ({
                     className="ps-btn ps-btn--black"
                     href="#"
                     onClick={(e) => handleAddItemToCart(e)}>
-                    Add to cart
+                    Adicionar ao Carrinho
                 </a>
                 <a className="ps-btn" href="#" onClick={(e) => handleBuynow(e)}>
-                    Buy Now
+                    Comprar
                 </a>
                 <div className="ps-product__actions">
                     <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
@@ -115,7 +115,7 @@ const ModuleDetailShoppingActions = ({
             <div className="ps-product__shopping extend">
                 <div className="ps-product__btn-group">
                     <figure>
-                        <figcaption>Quantity</figcaption>
+                        <figcaption>Quantidade</figcaption>
                         <div className="form-group--number">
                             <button
                                 className="up"
@@ -139,7 +139,7 @@ const ModuleDetailShoppingActions = ({
                         className="ps-btn ps-btn--black"
                         href="#"
                         onClick={(e) => handleAddItemToCart(e)}>
-                        Add to cart
+                        Adicionar ao Carrinho
                     </a>
                     <div className="ps-product__actions">
                         <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
@@ -151,7 +151,7 @@ const ModuleDetailShoppingActions = ({
                     </div>
                 </div>
                 <a className="ps-btn" href="#" onClick={(e) => handleBuynow(e)}>
-                    Buy Now
+                    Comprar
                 </a>
             </div>
         );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import useEcomerce from '~/hooks/useEcomerce';
+import useEcomerce from '../../../../hooks/useEcomerce';
 import { Modal } from 'antd';
 
 const ModuleDetailShoppingActionsSidebar = ({ ecomerce, product }) => {
@@ -22,8 +22,8 @@ const ModuleDetailShoppingActionsSidebar = ({ ecomerce, product }) => {
         addItem({ id: product.id }, ecomerce.compareItems, 'compare');
         const modal = Modal.success({
             centered: true,
-            title: 'Success!',
-            content: `This product has been added to compare listing!`,
+            title: 'Sucesso!',
+            content: `Item adicionado com sucesso a lista de comparação!`, //This product has been added to compare listing!`,
         });
         modal.update;
     }
@@ -33,8 +33,8 @@ const ModuleDetailShoppingActionsSidebar = ({ ecomerce, product }) => {
         addItem({ id: product.id }, ecomerce.wishlistItems, 'wishlist');
         const modal = Modal.success({
             centered: true,
-            title: 'Success!',
-            content: `This item has been added to your wishlist`,
+            title: 'Sucesso!',
+            content: `Item adicionado a lista de desejos!`, //This item has been added to your wishlist`,
         });
         modal.update;
     }
@@ -54,7 +54,7 @@ const ModuleDetailShoppingActionsSidebar = ({ ecomerce, product }) => {
     return (
         <div className="ps-product__shopping">
             <figure>
-                <figcaption>Quantity</figcaption>
+                <figcaption>Quantidade</figcaption>
                 <div className="form-group--number">
                     <button
                         className="up"
@@ -78,18 +78,18 @@ const ModuleDetailShoppingActionsSidebar = ({ ecomerce, product }) => {
                 className="ps-btn ps-btn--black"
                 href="#"
                 onClick={(e) => handleAddItemToCart(e)}>
-                Add to cart
+                Adicionar ao Carrinho
             </a>
             <a
                 className="ps-btn"
                 href="#"
                 onClick={(e) => handleAddItemToCart(e)}>
-                Buy Now
+                Comprar
             </a>
             <div className="ps-product__actions">
                 <a href="#" onClick={(e) => handleAddItemToWishlist(e)}>
                     <i className="icon-heart mr-1"></i>
-                    Add to wishlist
+                    Adicionar a Lista de Desejos
                 </a>
                 <a href="#" onClick={(e) => handleAddItemToCompare(e)}>
                     <i className="icon-chart-bars mr-1"></i>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import NextArrow from '../../../carousel/NextArrow';
-import PrevArrow from '../../../carousel/PrevArrow';
+import NextArrow from '../../../../components/elements/carousel/NextArrow';
+import PrevArrow from '../../../../components/elements/carousel/PrevArrow';
 import { Modal } from 'antd';
 class ThumbnailVideoFeatured extends Component {
     constructor(props) {

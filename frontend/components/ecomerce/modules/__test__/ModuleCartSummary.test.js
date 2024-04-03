@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ModuleCartSummary from './ModuleCartSummary';
-import { calculateAmount } from '../../../utilities/ecomerce-helpers';
-import { getByTextIgnoreWrapper } from '../../../utilities/tests-helpers';
+import ModuleCartSummary from '../ModuleCartSummary';
+import { calculateAmount } from '../../../../utilities/ecomerce-helpers';
+import { getByTextIgnoreWrapper } from '../../../../utilities/tests-helpers';
 
 describe('ModuleCartSummary', () => {
     it('should render without crashing', () => {
