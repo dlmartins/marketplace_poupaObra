@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PartialOffer = () => (
-    <p>Sorry no more offers available</p>
+    <p>Desculpe, Nenhuma oferta disoponível.</p>
 );
 
 export default PartialOffer;

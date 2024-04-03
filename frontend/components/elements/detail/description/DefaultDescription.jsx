@@ -1,37 +1,25 @@
 import React from 'react';
 
 import { Tabs } from 'antd';
-import PartialDescription from '~/components/elements/detail/description/PartialDescription';
-import PartialSpecification from '~/components/elements/detail/description/PartialSpecification';
-import PartialVendor from '~/components/elements/detail/description/PartialVendor';
-import PartialReview from '~/components/elements/detail/description/PartialReview';
-import PartialOffer from '~/components/elements/detail/description/PartialOffer';
+import PartialDescription from './PartialDescription';
+import PartialSpecification from './PartialSpecification';
+import PartialVendor from './PartialVendor';
+import PartialReview from './PartialReview';
+import PartialOffer from './PartialOffer';
 
-const { TabPane } = Tabs;
-
+const tabItems = [
+    { label: 'Descrição', children: <PartialDescription />, key: '1' },
+    { label: 'Especificação', children: <PartialSpecification />, key: '2' },
+    { label: 'Vendedor', children: <PartialVendor />, key: '3' },
+    { label: 'Avaliações (1)', children: <PartialReview />, key: '4' },
+    { label: 'Perguntas e Respostas', children: 'Conteudo do tab pane 3', key: '5' },
+    { label: 'Mais ofertas', children: <PartialOffer />, key: '6' }
+];
 const DefaultDescription = () => {
+
     return (
         <div className="ps-product__content ps-tab-root">
-            <Tabs defaultActiveKey="1">
-                <TabPane tab="Description" key="1">
-                    <PartialDescription />
-                </TabPane>
-                <TabPane tab="Specification" key="2">
-                    <PartialSpecification />
-                </TabPane>
-                <TabPane tab="Vendor" key="3">
-                    <PartialVendor />
-                </TabPane>
-                <TabPane tab="Reviews (1)" key="4">
-                    <PartialReview />
-                </TabPane>
-                <TabPane tab="Questions and Answers" key="5">
-                    Content of Tab Pane 3
-                </TabPane>
-                <TabPane tab="More Offers" key="6">
-                    <PartialOffer />
-                </TabPane>
-            </Tabs>
+            <Tabs items={tabItems} defaultActiveKey="1" />
         </div>
     );
 };

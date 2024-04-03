@@ -8,12 +8,12 @@ const ModuleProductDetailSharing = () => (
         <a className="twitter" href="#">
             <i className="fa fa-twitter"></i>
         </a>
-        <a className="google" href="#">
+        {/* <a className="google" href="#">
             <i className="fa fa-google-plus"></i>
-        </a>
-        <a className="linkedin" href="#">
+        </a> */}
+        {/* <a className="linkedin" href="#">
             <i className="fa fa-linkedin"></i>
-        </a>
+        </a> */}
         <a className="instagram" href="#">
             <i className="fa fa-instagram"></i>
         </a>

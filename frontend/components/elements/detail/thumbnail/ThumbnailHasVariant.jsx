@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Lightbox from 'react-image-lightbox';
-import NextArrow from '~/components/elements/carousel/NextArrow';
-import PrevArrow from '~/components/elements/carousel/PrevArrow';
-import { baseUrl } from '~/repositories/Repository';
+import NextArrow from '../../../../components/elements/carousel/NextArrow';
+import PrevArrow from '../../../../components/elements/carousel/PrevArrow';
+import { baseUrl } from '../../../../repositories/Repository';
+
 class ThumbnailHasVariant extends Component {
     constructor(props) {
         super(props);
@@ -75,9 +76,11 @@ class ThumbnailHasVariant extends Component {
         const { product } = this.props;
         const { photoIndex, isOpen } = this.state;
         const productImages = [];
-        product.images.map((variant) => {
-            productImages.push(`${baseUrl}${variant.url}`);
-        });
+        if (product.images) {
+            product.images.map((variant) => {
+                productImages.push(`${baseUrl}${variant.url}`);
+            });
+        }
 
         return (
             <div className="ps-product__thumbnail" data-vertical="true">
@@ -88,20 +91,24 @@ class ThumbnailHasVariant extends Component {
                             ref={(slider) => (this.slider1 = slider)}
                             asNavFor={this.state.variantCarousel}
                             className="ps-product__gallery ps-carousel inside">
-                            {product.images.map((variant, index) => (
-                                <div className="item" key={variant.id}>
-                                    <a
-                                        href="#"
-                                        onClick={(e) =>
-                                            this.handleOpenLightbox(e, index)
-                                        }>
-                                        <img
-                                            src={`${baseUrl}${variant.url}`}
-                                            alt="martfury-image"
-                                        />
-                                    </a>
-                                </div>
-                            ))}
+                            {product.images &&
+                                product.images.map((variant, index) => (
+                                    <div className="item" key={variant.id}>
+                                        <a
+                                            href="#"
+                                            onClick={(e) =>
+                                                this.handleOpenLightbox(
+                                                    e,
+                                                    index
+                                                )
+                                            }>
+                                            <img
+                                                src={`${baseUrl}${variant.url}`}
+                                                alt="martfury-image"
+                                            />
+                                        </a>
+                                    </div>
+                                ))}
                         </Slider>
                     </div>
                 </figure>
@@ -115,14 +122,15 @@ class ThumbnailHasVariant extends Component {
                     focusOnSelect={true}
                     {...variantSetting}
                     className="ps-product__variants">
-                    {product.images.map((variant) => (
-                        <div className="item" key={variant.id}>
-                            <img
-                                src={`${baseUrl}${variant.url}`}
-                                alt="martfury-image"
-                            />
-                        </div>
-                    ))}
+                    {product.images &&
+                        product.images.map((variant) => (
+                            <div className="item" key={variant.id}>
+                                <img
+                                    src={`${baseUrl}${variant.url}`}
+                                    alt="martfury-image"
+                                />
+                            </div>
+                        ))}
                 </Slider>
                 {isOpen && (
                     <Lightbox

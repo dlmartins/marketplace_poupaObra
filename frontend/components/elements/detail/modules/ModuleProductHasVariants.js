@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import Link from 'next/link';
-import ModuleProductDetailSharing from '~/components/elements/detail/modules/ModuleProductDetailSharing';
-import ModuleProductDetailSpecification from '~/components/elements/detail/modules/ModuleProductDetailSpecification';
-import ModuleProductDetailDescription from '~/components/elements/detail/modules/ModuleProductDetailDescription';
-import Rating from '~/components/elements/Rating';
-import ThumbnailHasVariant from '~/components/elements/detail/thumbnail/ThumbnailHasVariant';
-import { baseUrl } from '~/repositories/Repository';
+import ModuleProductDetailSharing from '../../../../components/elements/detail/modules/ModuleProductDetailSharing';
+import ModuleProductDetailSpecification from '../../../../components/elements/detail/modules/ModuleProductDetailSpecification';
+import ModuleProductDetailDescription from '../../../../components/elements/detail/modules/ModuleProductDetailDescription';
+import Rating from '../../../../components/elements/Rating';
+import ThumbnailHasVariant from '../../../../components/elements/detail/thumbnail/ThumbnailHasVariant';
+import { baseUrl } from '../../../../repositories/Repository';
 import { useRouter } from 'next/router';
-import useEcomerce from '~/hooks/useEcomerce';
+import useEcomerce from '../../../../hooks/useEcomerce';
 import { Modal } from 'antd';
 
 const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
@@ -110,17 +110,17 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
             priceArea = (
                 <h4 className="ps-product__price sale">
                     <del className="mr-2">
-                        {currency ? currency.symbol : '$'}
+                        {currency ? currency.symbol : 'R$'}
                         {selectedVariant.sale_price}
                     </del>
-                    {currency ? currency.symbol : '$'}
+                    {currency ? currency.symbol : 'R$'}
                     {selectedVariant.price}
                 </h4>
             );
         } else {
             priceArea = (
                 <h4 className="ps-selectedVariant__price">
-                    {currency ? currency.symbol : '$'}
+                    {currency ? currency.symbol : 'R$'}
                     {selectedVariant.price}
                 </h4>
             );
@@ -206,17 +206,17 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
                 priceArea = (
                     <h4 className="ps-product__price sale">
                         <del className="mr-2">
-                            {currency ? currency.symbol : '$'}
+                            {currency ? currency.symbol : 'R$'}
                             {product.sale_price}
                         </del>
-                        {currency ? currency.symbol : '$'}
+                        {currency ? currency.symbol : 'R$'}
                         {product.price}
                     </h4>
                 );
             } else {
                 priceArea = (
                     <h4 className="ps-product__price">
-                        {currency ? currency.symbol : '$'}
+                        {currency ? currency.symbol : 'R$'}
                         {product.price}
                     </h4>
                 );

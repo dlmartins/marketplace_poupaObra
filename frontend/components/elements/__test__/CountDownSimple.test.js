@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CountDownSimple from './CountDownSimple';
+import CountDownSimple from '../CountDownSimple';
 
 describe('CountDownSimple', () => {
   it('should render without crashing', () => {

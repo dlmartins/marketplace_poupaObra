@@ -1,5 +1,5 @@
 import React from 'react';
-import PartialReview from '~/components/elements/detail/description/PartialReview';
+import PartialReview from './PartialReview';
 
 const DescriptionFullContent = () => (
     <div className="ps-product__content">
