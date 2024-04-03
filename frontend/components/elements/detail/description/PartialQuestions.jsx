@@ -2,7 +2,7 @@ import React from 'react';
 
 const PartialQuestions = () => (
     <div className="ps-block--questions-answers">
-        <h3>Questions and Answers</h3>
+        <h3>Perguntas e Respostas</h3>
         <div className="form-group">
             <input
                 className="form-control"

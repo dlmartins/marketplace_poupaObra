@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect, useDispatch } from 'react-redux';
-import useEcomerce from '~/hooks/useEcomerce';
+import useEcomerce from '../../../../hooks/useEcomerce';
 import { useRouter } from 'next/router';
 
 const ModuleDetailActionsMobile = ({ ecomerce, product }) => {
@@ -24,10 +24,10 @@ const ModuleDetailActionsMobile = ({ ecomerce, product }) => {
                 className="ps-btn ps-btn--black"
                 href="#"
                 onClick={(e) => handleAddItemToCart(e)}>
-                Add to cart
+                Adicionar
             </a>
             <a className="ps-btn" href="#" onClick={(e) => handleBuyNow(e)}>
-                Buy Now
+                Comprar
             </a>
         </div>
     );

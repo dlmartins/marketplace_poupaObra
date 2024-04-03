@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import BreadCrumb from './BreadCrumb';
+import BreadCrumb from '../BreadCrumb';
 
 describe('BreadCrumb', () => {
   it('should render without crashing', () => {
@@ -10,7 +10,8 @@ describe('BreadCrumb', () => {
       { text: 'Category', url: '/category' },
       { text: 'Product 1' },
     ];
+    const layout = 'fullwidth';
 
-    render(<BreadCrumb breacrumb={breacrumb} />);
+    render(<BreadCrumb breacrumb={breacrumb} layout={layout} />);
   });
 });

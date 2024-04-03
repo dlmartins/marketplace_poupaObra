@@ -10,6 +10,7 @@ import HomeDefaultTopCategories from '~/components/partials/homepage/home-defaul
 import HomeDefaultProductListing from '~/components/partials/homepage/home-default/HomeDefaultProductListing';
 import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 import PageContainer from '~/components/layouts/PageContainer';
+import matchMedia from '../utilities/setupMatchMedia';
 
 const HomepageDefaultPage = () => {
     return (

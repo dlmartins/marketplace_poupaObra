@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import PrevArrow from './PrevArrow';
+import Rating from '../Rating';
 
-describe('PrevArrow', () => {
+describe('Rating', () => {
   it('should render without crashing', () => {
-    render(<PrevArrow />);
+    render(<Rating />);
   });
 });

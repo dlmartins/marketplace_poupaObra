@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Rating from './Rating';
+import PageLoader from '../PageLoader';
 
-describe('Rating', () => {
+describe('PageLoader', () => {
   it('should render without crashing', () => {
-    render(<Rating />);
+    render(<PageLoader />);
   });
 });

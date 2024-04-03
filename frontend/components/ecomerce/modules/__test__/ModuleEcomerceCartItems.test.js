@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import ModuleEcomerceCartItems from './ModuleEcomerceCartItems';
-import { getByTextIgnoreWrapper } from '../../../utilities/tests-helpers';
+import ModuleEcomerceCartItems from '../ModuleEcomerceCartItems';
+import { getByTextIgnoreWrapper } from '../../../../utilities/tests-helpers';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 // import { handleIncreaseItemQty, handleDecreaseItemQty, handleRemoveItem } from '../../../hooks/useEcomerce';

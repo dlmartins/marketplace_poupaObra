@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CustomPagination from './CustomPagination';
+import DefaultDescription from '../DefaultDescription';
 
-describe('CustomPagination', () => {
+describe('DefaultDescription', () => {
   it('should render without crashing', () => {
-    render(<CustomPagination />);
+    render(<DefaultDescription />);
   });
 });
