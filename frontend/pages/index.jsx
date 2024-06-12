@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SiteFeatures from '~/components/partials/homepage/home-default/SiteFeatures';
 import HomeAdsColumns from '~/components/partials/homepage/home-default/HomeAdsColumns';
 import HomeAds from '~/components/partials/homepage/home-default/HomeAds';
@@ -10,9 +10,15 @@ import HomeDefaultTopCategories from '~/components/partials/homepage/home-defaul
 import HomeDefaultProductListing from '~/components/partials/homepage/home-default/HomeDefaultProductListing';
 import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 import PageContainer from '~/components/layouts/PageContainer';
-import matchMedia from '../utilities/setupMatchMedia';
 
 const HomepageDefaultPage = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Importar setupMatchMedia apenas no lado do cliente
+            require('../utilities/setupMatchMedia');
+        }
+    }, []);
+
     return (
         <PageContainer title="Multipurpose Marketplace React Ecommerce Template">
             <main id="homepage-1">
