@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import BreadCrumb from '~/components/elements/BreadCrumb';
-import Product from '~/components/elements/products/Product';
-import ProductGroupGridItems from '~/components/partials/product/ProductGroupGridItems';
-import PageContainer from '~/components/layouts/PageContainer';
-import Newsletters from '~/components/partials/commons/Newletters';
-import useGetProducts from '~/hooks/useGetProducts';
+import BreadCrumb from '../../components/elements/BreadCrumb';
+import Product from '../../components/elements/products/Product';
+import ProductGroupGridItems from '../../components/partials/product/ProductGroupGridItems';
+import PageContainer from '../../components/layouts/PageContainer';
+import Newsletters from '../../components/partials/commons/Newletters';
+import useGetProducts from '../../hooks/useGetProducts';
 import { useRouter } from 'next/router';
 
 const SearchPage = () => {

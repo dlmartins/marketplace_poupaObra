@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Rate, Progress } from 'antd';
 import OrganicThumbnailDealHot from './OrganicThumbnailHotDeal';
-import CountDown from '../../../../elements/CountDown';
-import Rating from '../../../../elements/Rating';
+import CountDown from '../../../../../elements/CountDown';
+import Rating from '../../../../../elements/Rating';
 
 const OrganicProductHotDeal = () => (
     <div className="ps-product--detail ps-product--hot-deal">

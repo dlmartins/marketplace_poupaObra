@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import FormChangeUserInformation from '~/components/shared/FormChangeUserInformation';
+import FormChangeUserInformation from '../../../components/shared/FormChangeUserInformation';
 
 const UserInformation = () => {
     const accountLinks = [
