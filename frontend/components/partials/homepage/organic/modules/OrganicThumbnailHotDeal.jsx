@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import NextArrow from '../../../../elements/carousel/NextArrow';
-import PrevArrow from '../../../../elements/carousel/PrevArrow';
+import NextArrow from '../../../../../elements/carousel/NextArrow';
+import PrevArrow from '../../../../../elements/carousel/PrevArrow';
 
 class OrganicThumbnailDealHot extends Component {
     constructor(props) {
