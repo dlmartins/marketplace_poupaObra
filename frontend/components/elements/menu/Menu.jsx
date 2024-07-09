@@ -29,7 +29,7 @@ const Menu = ({ source, className }) => {
         menuView = (
             <li>
                 <a href="#" onClick={(e) => e.preventDefault()}>
-                    No menu item.
+                    Nenhum Item.
                 </a>
             </li>
         );

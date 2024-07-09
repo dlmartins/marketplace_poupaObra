@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { toggleDrawerMenu } from '~/store/app/action';
+import { toggleDrawerMenu } from '../../../store/app/action';
 
 const HeaderMobile = ({ isDrawerMenu }) => {
     const dispatch = useDispatch();

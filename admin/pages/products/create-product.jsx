@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import ContainerDefault from '~/components/layouts/ContainerDefault';
-import HeaderDashboard from '~/components/shared/headers/HeaderDashboard';
+import ContainerDefault from '../../components/layouts/ContainerDefault';
+import HeaderDashboard from '../../components/shared/headers/HeaderDashboard';
 import { connect, useDispatch } from 'react-redux';
-import { toggleDrawerMenu } from '~/store/app/action';
+import { toggleDrawerMenu } from '../../store/app/action';
 
 const CreateProductPage = () => {
     const dispatch = useDispatch();

@@ -1,5 +1,5 @@
 import React from 'react';
-import FormHeaderSearch from '~/components/shared/forms/FormHeaderSearch';
+import FormHeaderSearch from '../../../components/shared/forms/FormHeaderSearch';
 
 const HeaderDashboard = ({
     title = 'Dashboard',

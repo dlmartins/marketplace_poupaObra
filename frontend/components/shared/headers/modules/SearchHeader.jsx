@@ -6,7 +6,7 @@ import ProductRepository from '../../../../repositories/ProductRepository';
 import ProductSearchResult from '../../../../components/elements/products/ProductSearchResult';
 
 const exampleCategories = [
-    'All',
+    'Todos',
     'Babies & Moms',
     'Books & Office',
     'Cars & Motocycles',
@@ -22,46 +22,6 @@ const exampleCategories = [
     'Desktop PC',
     'Laptop',
     'Smartphones',
-    'Consumer Electrics',
-    'Air Conditioners',
-    'Accessories',
-    'Type Hanging Cell',
-    'Audios & Theaters',
-    'Headphone',
-    'Home Theater System',
-    'Speakers',
-    'Car Electronics',
-    'Audio & Video',
-    'Car Security',
-    'Radar Detector',
-    'Vehicle GPS',
-    'Office Electronics',
-    'Printers',
-    'Projectors',
-    'Scanners',
-    'Store & Business',
-    'Refrigerators',
-    'TV Televisions',
-    '4K Ultra HD TVs',
-    'LED TVs',
-    'OLED TVs',
-    'Washing Machines',
-    'Type Drying Clothes',
-    'Type Horizontal',
-    'Type Vertical',
-    'Garden & Kitchen',
-    'Cookware',
-    'Decoration',
-    'Furniture',
-    'Garden Tools',
-    'Home Improvement',
-    'Powers And Hand Tools',
-    'Utensil & Gadget',
-    'Health & Beauty',
-    'Equipments',
-    'Hair Care',
-    'Perfumer',
-    'Wine Cabinets',
 ];
 
 function useDebounce(value, delay) {
@@ -138,7 +98,7 @@ const SearchHeader = () => {
                 loadMoreView = (
                     <div className="ps-panel__footer text-center">
                         <Link href="/search">
-                            <a>See all results</a>
+                            <a>Ver todos os resultados.</a>
                         </Link>
                     </div>
                 );
@@ -147,7 +107,7 @@ const SearchHeader = () => {
                 <ProductSearchResult product={product} key={product.id} />
             ));
         } else {
-            productItemsView = <p>No product found.</p>;
+            productItemsView = <p>Nenhum Produto Encontrado.</p>;
         }
         if (keyword !== '') {
             clearTextView = (
@@ -191,7 +151,7 @@ const SearchHeader = () => {
                 {clearTextView}
                 {loadingView}
             </div>
-            <button onClick={handleSubmit}>Search</button>
+            <button onClick={handleSubmit}>Buscar</button>
             <div
                 className={`ps-panel--search-result${
                     isSearch ? ' active ' : ''
