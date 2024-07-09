@@ -22,26 +22,26 @@ const HeaderMarketPlace = () => {
             <div className="header__top">
                 <div className="container">
                     <div className="header__left">
-                        <p>Welcome to Martfury Online Shopping Store !</p>
+                        <p>Seja Bem-Vindo ao Poupa Obras, aqui você economiza de verdade!</p>
                     </div>
                     <div className="header__right">
                         <ul className="header__top-links">
                             <li>
                                 <Link href="/vendor/store-list">
-                                    <a>Store Location</a>
+                                    <a>Localização</a>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/page/blank">
                                     <a>Track Your Order</a>
                                 </Link>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                                 <CurrencyDropdown />
                             </li>
                             <li>
                                 <LanguageSwicher />
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const HeaderMarketPlace = () => {
                         <div className="menu--product-categories">
                             <div className="menu__toggle">
                                 <i className="icon-menu"></i>
-                                <span> Shop by Department</span>
+                                <span> Categorias</span>
                             </div>
                             <div className="menu__content">
                                 <Menu
@@ -96,16 +96,16 @@ const HeaderMarketPlace = () => {
                         </div>
                     </div>
                     <div className="navigation__right">
-                        <Menu
+                        {/* <Menu
                             source={menuData.menuPrimary.menu_1}
                             className="menu"
-                        />
-                        <div className="ps-block--header-hotline inline">
+                        /> */}
+                        {/* <div className="ps-block--header-hotline inline">
                             <p>
                                 <i className="icon-telephone"></i>Hotline:
                                 <strong> 1-800-234-5678</strong>
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </nav>

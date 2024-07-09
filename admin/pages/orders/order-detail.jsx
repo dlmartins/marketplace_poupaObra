@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import ContainerDefault from '~/components/layouts/ContainerDefault';
-import ModuleOrderShippingInformation from '~/components/partials/orders/ModuleOrderShippingInformation';
-import ModuleOrderBillingInformation from '~/components/partials/orders/ModuleOrderBillingInformation';
-import HeaderDashboard from '~/components/shared/headers/HeaderDashboard';
+import ContainerDefault from '../../components/layouts/ContainerDefault';
+import ModuleOrderShippingInformation from '../../components/partials/orders/ModuleOrderShippingInformation';
+import ModuleOrderBillingInformation from '../../components/partials/orders/ModuleOrderBillingInformation';
+import HeaderDashboard from '../../components/shared/headers/HeaderDashboard';
 import { connect, useDispatch } from 'react-redux';
-import { toggleDrawerMenu } from '~/store/app/action';
+import { toggleDrawerMenu } from '../../store/app/action';
 
 const OrderDetailPage = () => {
     const dispatch = useDispatch();

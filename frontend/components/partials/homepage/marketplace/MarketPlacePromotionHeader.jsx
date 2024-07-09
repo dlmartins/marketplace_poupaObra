@@ -20,7 +20,7 @@ const MarketPlacePromotionHeader = () => (
                 </p>
             </div>
             <a className="ps-btn ps-btn--sm" href="#">
-                Shop now
+                Visite a Loja
             </a>
         </div>
     </div>

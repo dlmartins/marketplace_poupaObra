@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import DefaultLayout from '~/components/layouts/DefaultLayout';
-import { wrapper } from '~/store/store';
-import '~/styles/style.scss';
+import DefaultLayout from '../components/layouts/DefaultLayout';
+import { wrapper } from '../store/store';
+import '../styles/style.scss';
 import 'antd/dist/antd.min.css';
 
 function App({ Component, pageProps }) {

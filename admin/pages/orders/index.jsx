@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import ContainerDefault from '~/components/layouts/ContainerDefault';
-import TableOrdersItems from '~/components/shared/tables/TableOrdersItems';
-import Pagination from '~/components/elements/basic/Pagination';
+import ContainerDefault from '../../components/layouts/ContainerDefault';
+import TableOrdersItems from '../../components/shared/tables/TableOrdersItems';
+import Pagination from '../../components/elements/basic/Pagination';
 import { Select } from 'antd';
 import Link from 'next/link';
-import HeaderDashboard from '~/components/shared/headers/HeaderDashboard';
+import HeaderDashboard from '../../components/shared/headers/HeaderDashboard';
 import { connect, useDispatch } from 'react-redux';
-import { toggleDrawerMenu } from '~/store/app/action';
+import { toggleDrawerMenu } from '../../store/app/action';
 
 const { Option } = Select;
 const OrdersPage = () => {

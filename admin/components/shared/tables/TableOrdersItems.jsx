@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Menu } from 'antd';
-import DropdownAction from '~/components/elements/basic/DropdownAction';
+import DropdownAction from '../../../components/elements/basic/DropdownAction';
 
 const TableOrdersItems = () => {
     const orderItems = [
